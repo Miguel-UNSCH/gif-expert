@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*
+{
+  /* margin: 0; */
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body
+{
+  background-color: rgb(54, 52, 52);
+  padding: .5rem;
+  color: white;
+}
+
+.add-category
+{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+input
+{
+  height: 2rem;
+  width: 15rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgb(223, 147, 33);
+  background-color: rgb(85, 84, 78);
+  box-shadow: 3px 3px 10px rgba(156, 90, 16, 0.6);
+  color: #fff;
+  padding: 0 10px;
+}
+
+input:focus-visible
+{
+  border-color: rgb(228, 143, 16);
+  outline: none;
+}
+
+input::placeholder
+{
+  color: rgb(153, 158, 158);
+}
+
+button
+{
+  height: 2rem;
+  width: 8rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(156, 97, 7);
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(156, 90, 16, 0.6);
+}
+
+button:hover
+{
+  background-color: rgb(194, 122, 15);
 }
